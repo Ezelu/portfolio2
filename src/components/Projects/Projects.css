@@ -1,0 +1,21 @@
+.Projects {
+  margin-top: 4rem;
+}
+
+.Projects .projects-container {
+  display: grid;
+  grid-template-columns: 31% 31% 31%;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 3rem;
+  gap: 2rem;
+}
+
+/* 
+.Projects .projects-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 3rem;
+  gap: 2rem;
+} */

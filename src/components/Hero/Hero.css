@@ -1,0 +1,14 @@
+.Hero {
+  display: flex;
+  align-items: center;
+}
+
+.Hero .content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.Hero .content p {
+  max-width: 28.9375rem;
+}

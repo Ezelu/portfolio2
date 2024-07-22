@@ -1,0 +1,18 @@
+.NavbarDesktop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 2rem 0 .5rem 0; */
+  padding: 2rem 0 2rem 0;
+  position: fixed;
+  max-width: var(--max_width);
+  width: 100%;
+  background: var(--black);
+}
+
+.NavbarDesktop ol {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}

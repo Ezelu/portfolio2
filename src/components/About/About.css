@@ -1,0 +1,23 @@
+.About {
+  margin-top: 6.625rem;
+}
+
+.About .image-container {
+  
+}
+
+.About .image-container img {
+  filter: grayscale(100);
+}
+
+.About .about-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.4375rem;
+  gap: 2rem;
+}
+
+.About .about-container p {
+  max-width: 35.1875rem;
+  text-align: justify;
+}

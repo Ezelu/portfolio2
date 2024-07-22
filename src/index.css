@@ -1,13 +1,137 @@
-body {
+*,
+body,
+html {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "FiraBold";
+  font-display: swap;
+  src: url(./fonts/FiraCode-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "FiraLight";
+  font-display: swap;
+  src: url(./fonts/FiraCode-Regular.ttf) format("truetype");
+}
+
+:root {
+  --black: #282c33;
+  --white: #ffffff;
+  --grey: #abb2bf;
+  --orange: rgb(251, 163, 0);
+  /* --orange: #C778DD; */
+  --max_width: 1170px;
+}
+
+body {
+  padding: 0 1rem;
+  margin: 0;
+  font-family: "FiraLight", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f8f8f9;
+  min-height: 100vh;
+  max-width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  position: relative;
+  color: var(--grey);
+  background: var(--black);
+  /* max-width: 1170px; */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  font-size: 16px;
+}
+
+.orange-color {
+  color: var(--orange);
+}
+
+.white-color {
+  color: var(--white);
+}
+
+.header-font {
+  font-size: 32px;
+}
+
+.grey-border {
+  border: 1px solid var(--grey);
+}
+
+.orange-border {
+  border: 1px solid var(--orange);
+}
+
+
+.mini-header {
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.mini-header .line-after {
+  vertical-align: baseline;
+  display: block;
+  position: relative;
+}
+
+.mini-header .line-after:after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  margin-left: 10px;
+  border-top: 1px solid var(--orange);
+}
+
+body::-webkit-scrollbar {
+  width: 0.4em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px var(--primary_white);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--primary_blue);
+  outline: 1px solid slategrey;
+}
+
+input,
+textarea,
+button,
+div,
+section,
+aside,
+article,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.mobile_navbar {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .mobile_navbar {
+    display: block;
+  }
+
+  .desktop_navbar {
+    display: none;
+  }
 }
